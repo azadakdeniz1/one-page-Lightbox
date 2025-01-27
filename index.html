@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Canada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Canada</h1>
+        <p>Explore the beauty of the Great White North</p>
+    </header>
+
+    <section>
+        <h2>Discover Stunning Landscapes</h2>
+        <div class="gallery">
+            <img src="images/1.jpg" alt="Canada Image 1" onclick="openModal(this)">
+            <img src="images/2.jpg" alt="Canada Image 2" onclick="openModal(this)">
+            <img src="images/3.jpg" alt="Canada Image 3" onclick="openModal(this)">
+            <img src="images/4.jpg" alt="Canada Image 4" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <div class="modal" id="lightbox">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
